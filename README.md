@@ -1,21 +1,18 @@
-# zshrc-config
-My personal Zsh configuration, managed with [chezmoi](https://www.chezmoi.io/).
----
-## Quick Start
-To apply this configuration on a new machine, run:
-```bashchezmoi init --apply https://github.com/DIAK26/zshrc-config```
-> **Note:** This only copies the config files. You still need to install the tools listed below manually.
----
 ## Requirements
 Install the following tools before or after applying the config:
-| Tool / Plugin             | Purpose                                    | Install Command                                               ||---------------------------|--------------------------------------------|---------------------------------------------------------------|| `oh-my-zsh`               | Zsh framework and plugin manager           | `sh -c "$(curl -fsSL https://install.ohmyz.sh)"`             || `zsh-autosuggestions`     | Fish-style command suggestions             | `sudo apt install zsh-autosuggestions`                        || `zsh-syntax-highlighting` | Real-time syntax highlighting              | `sudo apt install zsh-syntax-highlighting`                    || `fzf`                     | Fuzzy finder for history, files, and more  | `sudo apt install fzf`                                        || `bat`                     | `cat` replacement with syntax highlighting | `sudo apt install bat`                                        || `lsd`                     | Modern `ls` replacement with icons         | `sudo apt install lsd`                                        || `zellij`                  | Terminal multiplexer                       | `cargo install zellij`                                        || `zed`                     | Fast, modern code editor                   | `curl -f https://zed.dev/install.sh \| sh`                   |
-> **Debian note:** `bat` may be installed as `batcat`. Check with `which bat` or `which batcat`.
 ---
-## Shell
-- **Shell:** Zsh 5.9- **Framework:** oh-my-zsh
+### 🔧 oh-my-zshZsh framework and plugin manager.```bashsh -c "$(curl -fsSL https://install.ohmyz.sh)"```
 ---
-## What's Included
-- Aliases for `lsd` (modern `ls` replacement)- Plugin config for `zsh-autosuggestions` and `zsh-syntax-highlighting`- `fzf` keybindings and completion
+### 💡 zsh-autosuggestionsFish-style command suggestions as you type.```bashsudo apt install zsh-autosuggestions```
 ---
-## License
-MIT
+### 🎨 zsh-syntax-highlightingReal-time syntax highlighting in your shell.```bashsudo apt install zsh-syntax-highlighting```
+---
+### 🔍 fzfFuzzy finder for history, files, and more.```bashsudo apt install fzf```
+---
+### 🐱 bat`cat` replacement with syntax highlighting.```bashsudo apt install bat```> **Debian note:** `bat` may be installed as `batcat`. Check with `which bat` or `which batcat`.
+---
+### 📂 lsdModern `ls` replacement with icons and colors.```bashsudo apt install lsd```
+---
+### 🖥️ zellijTerminal multiplexer — a modern tmux alternative.```bashcargo install zellij```
+---
+### ⚡ zedFast, modern code editor.```bashcurl -f https://zed.dev/install.sh | sh```
