@@ -1,0 +1,21 @@
+[user]
+    name = DIAK26
+    email = office-dk@gmx.de
+
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    last = log -1 HEAD
+
+[core]
+    editor = nano
+    autocrlf = input
+
+[pull]
+    rebase = false
+
+[init]
+    defaultBranch = main
