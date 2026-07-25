@@ -1,4 +1,4 @@
-# chezmoi
+# chezmoi unter Linux Debian Trixie
 
 My personal configuration files managed with [chezmoi](https://www.chezmoi.io/).
 
