@@ -34,6 +34,15 @@ alias lt="lsd --tree"
 alias ld="lsd --tree --depth 3"
 alias bat="batcat"
 
+# NEUE ALIASES HINZUFÜGEN ↓
+alias gs="git status"
+alias ga="git add -A"
+alias gc="git commit -m"
+alias gp="git push"
+alias gpl="git pull"
+alias gd="git diff"
+alias gco="git checkout"
+
 # --------------------------------------------
 # PROMPT (muss am Ende stehen)
 # --------------------------------------------
