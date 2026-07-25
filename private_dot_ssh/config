@@ -1,0 +1,12 @@
+# Globale Defaults für alle Verbindungen
+Host *
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    AddKeysToAgent yes
+    IdentitiesOnly yes
+
+# GitHub (dein Hauptschlüssel)
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_main
