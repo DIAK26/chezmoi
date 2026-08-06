@@ -1,0 +1,44 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+format = """
+[░▒▓](bg:#1a1f3a fg:#1a1f3a)\
+[ 🪐 @commonsky ](bg:#1a1f3a fg:#c8d8ff)\
+[▓▒░](fg:#1a1f3a bg:#2d4a8a)\
+[ $directory ](bg:#2d4a8a fg:#e8f0ff)\
+[▓▒░](fg:#2d4a8a bg:#4a7abf)\
+[$git_branch$git_status](bg:#4a7abf fg:#0d1220)\
+[▓▒░](fg:#4a7abf bg:#1d2230)\
+$status\
+[ $time ](bg:#1d2230 fg:#a3aed2)\
+[▓▒░](fg:#1d2230)\
+$line_break$character"""
+
+[directory]
+style = "bg:#2d4a8a fg:#e8f0ff"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:#4a7abf fg:#0d1220"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#4a7abf fg:#0d1220"
+format = "[$all_status$ahead_behind ]($style)"
+
+[time]
+disabled = false
+style = "bg:#1d2230 fg:#a3aed2"
+format = "[ $time ]($style)"
+time_format = "%H:%M:%S"
+
+[character]
+success_symbol = "[❯](bold fg:#a3aed2)"
+error_symbol = "[❯](bold fg:#ff6e6e)"
+
+[status]
+style = "bg:#1d2230 fg:#ff6e6e"
+format = "[ ✘ $status ]($style)"
+disabled = false
