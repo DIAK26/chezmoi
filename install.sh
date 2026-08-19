@@ -54,6 +54,18 @@ log_info "Aktualisiere Package-Listen..."
 sudo apt update
 
 # ═══════════════════════════════════════════════════════════════════════
+# 0. ZSH (Voraussetzung für oh-my-zsh)
+# ═══════════════════════════════════════════════════════════════════════
+
+if is_installed zsh; then
+    log_success "zsh bereits installiert"
+else
+    log_info "Installiere zsh..."
+    sudo apt install -y zsh
+    log_success "zsh installiert"
+fi
+
+# ═══════════════════════════════════════════════════════════════════════
 # 1. OH-MY-ZSH
 # ═══════════════════════════════════════════════════════════════════════
 
