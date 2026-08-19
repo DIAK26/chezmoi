@@ -134,6 +134,32 @@ else
 fi
 
 # ═══════════════════════════════════════════════════════════════════════
+# Build Tools (für Rust/Cargo-Compilation)
+# ═══════════════════════════════════════════════════════════════════════
+
+if command -v gcc &> /dev/null; then
+    log_success "build-essential bereits installiert"
+else
+    log_info "Installiere build-essential (gcc, make, etc.)..."
+    sudo apt install -y build-essential
+    log_success "build-essential installiert"
+fi
+
+# ═══════════════════════════════════════════════════════════════════════
+# Rust & Cargo (Voraussetzung für zellij)
+# ═══════════════════════════════════════════════════════════════════════
+
+if is_installed cargo; then
+    log_success "Rust/Cargo bereits installiert"
+else
+    log_info "Installiere Rust und Cargo..."
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --quiet
+    # shellcheck disable=SC1091
+    source "$HOME/.cargo/env"
+    log_success "Rust und Cargo installiert"
+fi
+
+# ═══════════════════════════════════════════════════════════════════════
 # 6. ZELLIJ (Terminal Multiplexer)
 # ═══════════════════════════════════════════════════════════════════════
 
