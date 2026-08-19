@@ -33,6 +33,14 @@ alias la="lsd -la"
 alias lt="lsd --tree"
 alias ld="lsd --tree --depth 3"
 alias bat="batcat"
+# Datei schnell suchen und öffnen
+alias f='nano $(find ~ -type f | fzf)'
+
+# Zu Verzeichnis springen
+alias cd_find='cd $(find ~ -type d | fzf)'
+
+# Datei kopieren
+alias cp_find='cp $(find ~ -type f | fzf -m) '
 
 # NEUE ALIASES HINZUFÜGEN ↓
 alias gs="git status"
