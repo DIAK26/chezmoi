@@ -10,3 +10,7 @@ Host github.com
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_main
+Host ubuntu-vm
+    HostName 63.183.195.67
+    User ubuntu
+    IdentitiesOnly no
